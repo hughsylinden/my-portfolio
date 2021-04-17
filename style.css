@@ -2,6 +2,7 @@
 
 body{
   font-family: FuturaMedium;
+  margin:30px 30px 30px 30px;
 }
 
 
@@ -22,7 +23,7 @@ header {
   position: relative;
   display:inline-block;
   left:41%;
-  top:50%;
+  top:55%;
   text-align: center;
   padding: 30px;
 }
@@ -44,7 +45,7 @@ b{
 nav{
   background-color:#71777A;
   position:absolute;
-  top:67.5vh;
+  top:70vh;
   left:44%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -62,19 +63,16 @@ nav{
   color:#71777A;
 }
 
-#mainpage{
+#main{
   display: flex;
   justify-content: space-between;
-  padding: 20px
+  padding: 20px;
+  background-color: #E1D8CE;
 }
 
 article {
   border-color: red;
   border-style:solid;
-}
-
-img{
-  width:100px;
 }
 
 .profileimage{
