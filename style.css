@@ -75,10 +75,11 @@ nav{
 
 article {
   background-color: #F5F5F5;
-  width:30%;
+  width:25.5%;
   border-style: solid;
   border-color: #71777A;
   border-width: 1px;
+  padding: 40px 40px 40px 40px;
 }
 
 .profileimage{
@@ -94,10 +95,9 @@ img{
   width: 300px;
 }
 
-
 /* CONTACT PAGE */
 
-.outer {
+#contact {
   position: relative;
   left:37.5%;
   width:25%;
