@@ -11,8 +11,8 @@ body{
   background-color: #E1D8CE;
   background-repeat: no-repeat ;
   background-position: center center;
-  background-size: 70vh;
-  height:70vh;
+  background-size: 85vh;
+  height:85vh;
 }
 
 
@@ -23,7 +23,7 @@ header {
   position: relative;
   display:inline-block;
   left:41%;
-  top:55%;
+  top:60%;
   text-align: center;
   padding: 30px;
 }
@@ -45,7 +45,7 @@ b{
 nav{
   background-color:#71777A;
   position:absolute;
-  top:70vh;
+  top:85vh;
   left:44%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -103,18 +103,18 @@ img{
   width:25%;
   display: flex;
   min-height: 100%;
-  flex-direction: column; /* added */
+  flex-direction: column; 
 }
 
 .row {
   border: 1px solid #71777A;
   display: flex;
-  flex: 1; /* added */
+  flex: 1; 
 }
 
 .item {
   background-color: #E1D8CE;
-  flex: 1; /* added */
+  flex: 1; 
   text-align: center;
   color:#71777A;
   text-decoration: none;
