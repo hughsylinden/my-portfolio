@@ -39,22 +39,20 @@ h3, h5{
   color:#F5F5F5;
   text-transform: uppercase;
 }
-#contact{
-  margin-top: 2vh;
-}
+
 nav{
   background-color:#71777A;
   position:absolute;
   top:85vh;
   left:43.5vw;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .navbar{
   text-decoration: none;
   text-align: center;
-  padding:1vw 1vw 1vw 1vw;
+  padding:3vh 1vw 3vh 1vw;
   color:#F5F5F5;
 }
 
@@ -107,10 +105,11 @@ aside{
 
 #contact {
   position: relative;
-  left:36vw;
+  left: 36vw;
   width:23.5vw;
   display: flex;
   flex-direction: column; 
+  margin-top: 2vh;  
 }
 
 .row {
@@ -138,6 +137,13 @@ aside{
 .sm:hover + .link{
   background-color: #F5F5F5;
 }
+@media screen and (min-width:1000px) and (max-width:1500px) {
+  #contact {
+    left: 30vw;
+    width: 37vw;
+    font-size: 1.5vw;
+  }  
+}
 
 @media screen and (min-width:200px) and (max-width:1000px) {
   #home{
@@ -149,7 +155,7 @@ aside{
   
   nav{
     font-size: 1.8vw;
-    top:100vh;
+    top:99vh;
   }
   
   h3 {
