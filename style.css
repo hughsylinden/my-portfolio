@@ -39,7 +39,9 @@ h3, h5{
   color:#F5F5F5;
   text-transform: uppercase;
 }
-
+#contact{
+  margin-top: 2vh;
+}
 nav{
   background-color:#71777A;
   position:absolute;
@@ -73,7 +75,7 @@ b{
   margin-left: 80px;
   margin-right: 80px;
   text-align: center;  
-  height:70vh;
+  height:65vh;
 }
 
 article {
@@ -144,11 +146,12 @@ aside{
   header{
     left:33vw;
   }
+  
   nav{
-    top:85vh;
     font-size: 1.8vw;
-    left:34vw;
+    top:100vh;
   }
+  
   h3 {
     font-size: 3vw;
   }
@@ -165,6 +168,9 @@ aside{
   aside{
     width:auto;
     height: auto;
+  }
+  .container{
+    margin-top: -7vh;
   }
   #contact {
     left:22vw;
