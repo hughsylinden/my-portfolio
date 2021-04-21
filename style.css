@@ -150,7 +150,7 @@ aside{
   }  
 }
 
-@media screen and (min-width:200px) and (max-width:1000px) {
+@media screen and (min-width:200px) and (max-width:1000px){
   #home{
     height:100vh;
   }
