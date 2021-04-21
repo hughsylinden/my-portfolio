@@ -5,6 +5,7 @@ body{
   margin:30px 30px 30px 30px;
 }
 
+/* LANDING PAGE */
 
 #home{
   background-image: url('better.jpg');
@@ -40,6 +41,8 @@ h3, h5{
   text-transform: uppercase;
 }
 
+/* NAV BAR */
+
 nav{
   background-color:#71777A;
   position:absolute;
@@ -64,6 +67,8 @@ nav{
 b{
   text-transform: uppercase;
 }
+
+/* BIO PAGE */
 
 #main{
   display: flex;
@@ -101,7 +106,7 @@ aside{
   height:40vh;
 }
 
-/* CONTACT PAGE */
+/* CONTACT SECTION */
 
 #contact {
   position: relative;
@@ -185,3 +190,14 @@ aside{
   }  
 }
 
+.vertical {
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  color: black;
+}
+
+#verticaltext {
+  padding-left: 100px;
+  padding-bottom: 200px;
+  font-size: 2em;
+}
