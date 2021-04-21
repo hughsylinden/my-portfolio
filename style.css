@@ -166,5 +166,10 @@ aside{
     width:auto;
     height: auto;
   }
+  #contact {
+    left:22vw;
+    width:50vw;
+    font-size: 2vw;
+  }  
 }
 
