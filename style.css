@@ -11,7 +11,7 @@ body{
   background-color: #E1D8CE;
   background-repeat: no-repeat ;
   background-position: center center;
-  background-size: 85vh;
+  background-size: contain;
   height:85vh;
 }
 
@@ -22,14 +22,19 @@ header {
   border-style:solid;
   position: relative;
   display:inline-block;
-  left:41%;
+  left:40vw;
   top:60%;
   text-align: center;
   padding: 30px;
 }
 
 h3{
-  font-size: 30px;
+  font-size:1.5vw ;
+}
+
+h5{
+
+  font-size:0.7vw ;
 }
 
 h3, h5{
@@ -38,15 +43,11 @@ h3, h5{
 }
 
 
-b{
-  text-transform: uppercase;
-}
-
 nav{
   background-color:#71777A;
   position:absolute;
   top:85vh;
-  left:44%;
+  left:44vw;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -54,13 +55,17 @@ nav{
 .navbar{
   text-decoration: none;
   text-align: center;
-  padding:20px 20px 20px 20px;
+  padding:1vw 1vw 1vw 1vw;
   color:#F5F5F5;
 }
 
 .navbar:hover{
   background-color:#F5F5F5;
   color:#71777A;
+}
+
+b{
+  text-transform: uppercase;
 }
 
 #main{
