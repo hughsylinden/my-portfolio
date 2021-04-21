@@ -15,7 +15,6 @@ body{
   height:85vh;
 }
 
-
 header {
   border-color: #F5F5F5;
   border-width: 1px;
@@ -23,7 +22,7 @@ header {
   position: relative;
   display:inline-block;
   left:40vw;
-  top:60%;
+  top:55%;
   text-align: center;
   padding: 30px;
 }
@@ -33,7 +32,6 @@ h3{
 }
 
 h5{
-
   font-size:0.7vw ;
 }
 
@@ -47,8 +45,8 @@ nav{
   position:absolute;
   top:85vh;
   left:43.5vw;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .navbar{
@@ -60,7 +58,7 @@ nav{
 
 .navbar:hover{
   background-color:#F5F5F5;
-  color:#71777A;
+  color:#71777A;  
 }
 
 b{
@@ -138,3 +136,24 @@ aside{
 .sm:hover + .link{
   background-color: #F5F5F5;
 }
+
+@media screen and (min-width:200px) and (max-width:1500px) {
+  #home{
+    height:100vh;
+  }
+  header{
+    left:33vw;
+  }
+  nav{
+    top:85vh;
+    font-size: 1.8vw;
+    left:34vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  h5{
+    font-size: 1.5vw;
+  }
+}
+
