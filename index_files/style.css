@@ -9,11 +9,13 @@ body{
 
 #home{
   background-image: url('better.jpg');
+  background-color: #E1D8CE;
   background-repeat: no-repeat ;
   background-position: center center;
   background-size: contain;
   height:85vh;
 }
+
 header {
   border-color: #F5F5F5;
   border-width: 1px;
@@ -21,9 +23,11 @@ header {
   position: relative;
   display:inline-block;
   left:40vw;
-  top:80vh;
+  top:55%;
   text-align: center;
+  padding: 30px;
 }
+
 h3{
   font-size:1.5vw ;
 }
@@ -36,14 +40,16 @@ h3, h5{
   color:#F5F5F5;
   text-transform: uppercase;
 }
+
 /* NAV BAR */
 
 nav{
-  display: block;
   background-color:#71777A;
+  position:absolute;
+  top:85vh;
+  left:43.5vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  text-align:center;
 }
 
 .navbar{
@@ -51,7 +57,6 @@ nav{
   text-align: center;
   padding:3vh 1vw 3vh 1vw;
   color:#F5F5F5;
-  text-align:center;
 }
 
 .navbar:hover{
@@ -137,7 +142,6 @@ aside{
 .sm:hover + .link{
   background-color: #F5F5F5;
 }
-
 @media screen and (min-width:1000px) and (max-width:1500px) {
   #contact {
     left: 30vw;
@@ -146,10 +150,12 @@ aside{
   }  
 }
 
-@media screen and (min-width:300px) and (max-width:1000px) {
-
+@media screen and (min-width:200px) and (max-width:1000px){
+  #home{
+    height:100vh;
+  }
   header{
-    left:27vw;
+    left:33vw;
   }
   
   nav{
@@ -166,10 +172,9 @@ aside{
   #main{
     display: block;
     height:auto;
-    margin: 0;
   }
   article{
-    width:auto;
+    width:65vw;
   }
   aside{
     width:auto;
@@ -185,8 +190,14 @@ aside{
   }  
 }
 
-@media screen and (min-width:100px) and (max-width:650px) {
-  nav{
-    width: 100%;
-  }
+.vertical {
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  color: black;
+}
+
+#verticaltext {
+  padding-left: 100px;
+  padding-bottom: 200px;
+  font-size: 2em;
 }
