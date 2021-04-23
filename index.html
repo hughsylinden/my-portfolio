@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-  </head>
-  <body>
-    <section id="home">
-      <header>
-        <h3>Hugh Kristiansen</h3>
-        <h5>aspiring eveloper</h5>
-      </header> 
-      <nav>
-        <a class="navbar" href="#home">Home  </a>
-        <a class="navbar" href="#main">About</a>
-        <a class="navbar" href="#contact">Contact</a>
-      </nav>
+
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <section id="home">
+    <header>
+      <h3>Hugh Kristiansen</h3>
+      <h5>aspiring eveloper</h5>
+    </header>
+    <nav>
+      <a class="navbar" href="./index.html">Home </a>
+      <a class="navbar" href="#" onclick="return show('main','contact')">About</a>
+      <a class="navbar" href="#" onclick="return show('contact','main')">Contact</a>
+    </nav>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section id="main">
+    <article>
+      <h4>Hello! I'm Hugh.</h4>
+      <p>I am a MCRCodes student currently working in professional services in Manchester.
+      </p>
+      <p>My programming experience beyond Java is mostly self-taught(and limited) and includes the following languages:
+      </p>
+      <ul>
+        <li>Java</li>
+        <li>HTML/CSS</li>
+        <li>Ruby</li>
+        <li>Python</li>
+      </ul>
+    </article>
+    <aside>
+      <br>
+      <br>
+      <br>
+      <div class="container"></div>
+      <i>Hugh Kristiansen is an aspiring developer. Please hire him.</i>
+    </aside>
+    </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <section id="main">
-      <article>
-        <h4>Hello! I'm Hugh.</h4>
-        <p>I am a MCRCodes student currently working in professional services in Manchester.          
-        </p>
-        <p>My programming experience beyond Java is mostly self-taught(and limited) and includes the following languages:</p>
-        <ul>
-          <li>Java</li>
-          <li>HTML/CSS</li>
-          <li>Ruby</li>
-          <li>Python</li>
-        </ul>
-      </article> 
-      <aside>
-        <br>
-        <br>
-        <br>
-        <div class="container"></div>
-        <i>Hugh Kristiansen is an aspiring developer. Please hire him.</i>
-      </aside> 
-    </section>
-    <section id="contact">
+    <section id="contact" style="display:none">
       <form id="contact-form">
         <ul>
           <li class="form-row">
@@ -54,7 +58,7 @@
           </li>
           <li class="form-row">
             <label class="row-item" for="message">Message:</label>
-            <textarea class="row-item" id="message" ></textarea><br>
+            <textarea class="row-item" id="message"></textarea><br>
           </li>
           <button class="row-item" type="clear" id="formClear">clear</button>
           <button class="row-item" type="submit" id="formSubmit">submit</button>
@@ -62,22 +66,33 @@
       </form>
       <span id="contact-links">
         <div class="row">
-          <a class="item sm" href="https://twitter.com/hughsy"><div>twitter</div></a>
+          <a class="item sm" href="https://twitter.com/hughsy">
+            <div>twitter</div>
+          </a>
           <div class="item link">twitter.com/hughsy</div>
         </div>
         <div class="row">
-          <a class="item sm" href="https://fb.com/hugh.kristiansen"><div>facebook</div></a>
+          <a class="item sm" href="https://fb.com/hugh.kristiansen">
+            <div>facebook</div>
+          </a>
           <div class="item link">fb.com/hugh.kristiansen</div>
         </div>
         <div class="row">
-          <a class="item sm" href="https://github.com/hughsylinden"><div>github</div></a>
+          <a class="item sm" href="https://github.com/hughsylinden">
+            <div>github</div>
+          </a>
           <div class="item link">github.com/hughsylinden</div>
         </div>
       </span>
+      </div>
     </section>
-  </body>
-  <script>
-    var submitButton = document.getElementById('formSubmit')
+    <script>
+      function show(shown, hidden) {
+        document.getElementById(shown).style.display = 'flex';
+        document.getElementById(hidden).style.display = 'none';
+        return false;
+      }
+      var submitButton = document.getElementById('formSubmit')
     var clearButton = document.getElementById('formClear')
     var nameElement = document.getElementById('name')
     var email = document.getElementById('email')
@@ -86,11 +101,6 @@
       e.preventDefault();
       alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
     })
-    clearButton.addEventListener('click',function(e){
-      e.preventDefault();
-      nameElement.value= '';
-      email.value= '';
-      message.value= '';
-    })
-  </script>
+    </script>
+
 </html>
