@@ -56,6 +56,7 @@
             <label class="row-item" for="message">Message:</label>
             <textarea class="row-item" id="message" ></textarea><br>
           </li>
+          <button class="row-item" type="clear" id="formClear">clear</button>
           <button class="row-item" type="submit" id="formSubmit">submit</button>
         </ul>
       </form>
@@ -72,18 +73,24 @@
           <a class="item sm" href="https://github.com/hughsylinden"><div>github</div></a>
           <div class="item link">github.com/hughsylinden</div>
         </div>
-    </span>
+      </span>
     </section>
   </body>
   <script>
-    var button = document.getElementById('formSubmit')
+    var submitButton = document.getElementById('formSubmit')
+    var clearButton = document.getElementById('formClear')
     var nameElement = document.getElementById('name')
     var email = document.getElementById('email')
     var message = document.getElementById('message')
-    button.addEventListener('click',function(e){
+    submitButton.addEventListener('click',function(e){
       e.preventDefault();
-      console.log(name.value)
       alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
+    })
+    clearButton.addEventListener('click',function(e){
+      e.preventDefault();
+      nameElement.value= '';
+      email.value= '';
+      message.value= '';
     })
   </script>
 </html>
