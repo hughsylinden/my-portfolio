@@ -203,7 +203,6 @@ textarea{
 @media screen and (min-width:300px) and (max-width:1000px) {
   #home{
     height:100vh;
-    background-color: lightcoral;
   }
   header{
     left:33vw;

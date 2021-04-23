@@ -1,72 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-  </head>
-  <body>
-    <section id="home">
-      <header>
-        <h3>Hugh Kristiansen</h3>
-        <h5>aspiring eveloper</h5>
-      </header> 
-      <nav>
-        <a class="navbar" href="./index.html">Home  </a>
-        <a class="navbar" href="#main">About</a>
-        <a class="navbar" href="./about-me.html">Contact</a>
-      </nav>
-    </section>
-    <section id="main">
-      <form id="contact-form">
-        <ul>
-          <li class="form-row">8
-            <label class="row-item" for="name">Name:</label>
-            <input class="row-item" type="text" id="name"><br>
-          </li>
-          <li class="form-row">
-            <label class="row-item" for="email">Email:</label>
-            <input class="row-item" type="email" id="email"><br>
-          </li>
-          <li class="form-row">
-            <label class="row-item" for="message">Message:</label>
-            <textarea class="row-item" id="message" ></textarea><br>
-          </li>
-          <button class="row-item" type="clear" id="formClear">clear</button>
-          <button class="row-item" type="submit" id="formSubmit">submit</button>
-        </ul>
-      </form>
-      <span id="contact-links">
-        <div class="row">
-          <a class="item sm" href="https://twitter.com/hughsy"><div>twitter</div></a>
-          <div class="item link">twitter.com/hughsy</div>
-        </div>
-        <div class="row">
-          <a class="item sm" href="https://fb.com/hugh.kristiansen"><div>facebook</div></a>
-          <div class="item link">fb.com/hugh.kristiansen</div>
-        </div>
-        <div class="row">
-          <a class="item sm" href="https://github.com/hughsylinden"><div>github</div></a>
-          <div class="item link">github.com/hughsylinden</div>
-        </div>
-      </span>
-    </section>
-  </body>
-  <script>
-    var submitButton = document.getElementById('formSubmit')
-    var clearButton = document.getElementById('formClear')
-    var nameElement = document.getElementById('name')
-    var email = document.getElementById('email')
-    var message = document.getElementById('message')
-    submitButton.addEventListener('click',function(e){
-      e.preventDefault();
-      alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
-    })
-    clearButton.addEventListener('click',function(e){
-      e.preventDefault();
-      nameElement.value= '';
-      email.value= '';
-      message.value= '';
-    })
-  </script>
-</html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<form id="contact-form">
+  <ul>
+    <li class="form-row">
+      <label class="row-item" for="name">Name:</label>
+      <input class="row-item" type="text" id="name"><br>
+    </li>
+    <li class="form-row">
+      <label class="row-item" for="email">Email:</label>
+      <input class="row-item" type="email" id="email"><br>
+    </li>
+    <li class="form-row">
+      <label class="row-item" for="message">Message:</label>
+      <textarea class="row-item" id="message"></textarea><br>
+    </li>
+    <button class="row-item" type="clear" id="formClear">clear</button>
+    <button class="row-item" type="submit" id="formSubmit">submit</button>
+  </ul>
+</form>
+<span id="contact-links">
+  <div class="row">
+    <a class="item sm" href="https://twitter.com/hughsy">
+      <div>twitter</div>
+    </a>
+    <div class="item link">twitter.com/hughsy</div>
+  </div>
+  <div class="row">
+    <a class="item sm" href="https://fb.com/hugh.kristiansen">
+      <div>facebook</div>
+    </a>
+    <div class="item link">fb.com/hugh.kristiansen</div>
+  </div>
+  <div class="row">
+    <a class="item sm" href="https://github.com/hughsylinden">
+      <div>github</div>
+    </a>
+    <div class="item link">github.com/hughsylinden</div>
+  </div>
+</span>
+</div>

@@ -93,14 +93,14 @@
         return false;
       }
       var submitButton = document.getElementById('formSubmit')
-    var clearButton = document.getElementById('formClear')
-    var nameElement = document.getElementById('name')
-    var email = document.getElementById('email')
-    var message = document.getElementById('message')
-    submitButton.addEventListener('click',function(e){
-      e.preventDefault();
-      alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
-    })
+      var clearButton = document.getElementById('formClear')
+      var nameElement = document.getElementById('name')
+      var email = document.getElementById('email')
+      var message = document.getElementById('message')
+      submitButton.addEventListener('click',function(e){
+        e.preventDefault();
+        alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
+      })
     </script>
 
 </html>
