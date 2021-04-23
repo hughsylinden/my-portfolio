@@ -155,8 +155,7 @@ aside{
 }
 
 form {
-  border-style: solid;
-  border-color: #71777A;
+  border: 1px solid #71777A;
   display:flex;
   flex-direction: column; 
   color:#71777A;
@@ -172,13 +171,20 @@ form {
   flex: 1; 
 }
 ul {
-  padding:0;
+  padding: 0 1vw 0 1vw;
 }
 li {
   margin: 1vh 0 1vh 0;
 }
 button{
   float:right;
+}
+button,input,textarea{
+  border:1px solid #71777A;;
+  background-color: #F5F5F5;
+}
+textarea{
+  height:10vh;
 }
 
 /* MEDIA QUERIES */
