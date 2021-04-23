@@ -42,27 +42,37 @@
       </aside> 
     </section>
     <section id="contact">
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name"><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email"><br>
-      <label for="message">Message:</label>
-      <textarea id="message" ></textarea><br>
-      <button type="submit" id="formSubmit">submit</button>
-    </form>
-      <div class="row">
-        <a class="item sm" href="https://twitter.com/hughsy"><div>twitter</div></a>
-        <div class="item link">twitter.com/hughsy</div>
-      </div>
-      <div class="row">
-        <a class="item sm" href="https://fb.com/hugh.kristiansen"><div>facebook</div></a>
-        <div class="item link">fb.com/hugh.kristiansen</div>
-      </div>
-      <div class="row">
-        <a class="item sm" href="https://github.com/hughsylinden"><div>github</div></a>
-        <div class="item link">github.com/hughsylinden</div>
-      </div>
+      <form id="contact-form">
+        <ul>
+          <li class="form-row">
+            <label class="row-item" for="name">Name:</label>
+            <input class="row-item" type="text" id="name"><br>
+          </li>
+          <li class="form-row">
+            <label class="row-item" for="email">Email:</label>
+            <input class="row-item" type="email" id="email"><br>
+          </li>
+          <li class="form-row">
+            <label class="row-item" for="message">Message:</label>
+            <textarea class="row-item" id="message" ></textarea><br>
+          </li>
+          <button class="row-item" type="submit" id="formSubmit">submit</button>
+        </ul>
+      </form>
+      <span id="contact-links">
+        <div class="row">
+          <a class="item sm" href="https://twitter.com/hughsy"><div>twitter</div></a>
+          <div class="item link">twitter.com/hughsy</div>
+        </div>
+        <div class="row">
+          <a class="item sm" href="https://fb.com/hugh.kristiansen"><div>facebook</div></a>
+          <div class="item link">fb.com/hugh.kristiansen</div>
+        </div>
+        <div class="row">
+          <a class="item sm" href="https://github.com/hughsylinden"><div>github</div></a>
+          <div class="item link">github.com/hughsylinden</div>
+        </div>
+    </span>
     </section>
   </body>
   <script>

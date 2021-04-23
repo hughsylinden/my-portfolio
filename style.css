@@ -107,7 +107,7 @@ aside{
 
 /* CONTACT SECTION */
 
-#contact {
+#contact-links {
   position: relative;
   left: 36vw;
   width:23.5vw;
@@ -142,8 +142,49 @@ aside{
   background-color: #F5F5F5;
 }
 
+/* FORM */
+
+#contact-form {
+  position: relative;
+  left: 33.4vw;
+  width:30vw;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 2vh;  
+  background-color: #E1D8CE;
+}
+
+form {
+  border-style: solid;
+  border-color: #71777A;
+  display:flex;
+  flex-direction: column; 
+  color:#71777A;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  flex: 1;
+}
+
+.row-item {
+  flex: 1; 
+}
+ul {
+  padding:0;
+}
+li {
+  margin: 1vh 0 1vh 0;
+}
+button{
+  float:right;
+}
+
+/* MEDIA QUERIES */
+
 @media screen and (min-width:1000px) and (max-width:1500px) {
-  #contact {
+  #contact-links {
     left: 30vw;
     width: 37vw;
     font-size: 1.5vw;
@@ -184,7 +225,7 @@ aside{
   .container{
     margin-top: -7vh;
   }
-  #contact {
+  #contact-links {
     left:22vw;
     width:50vw;
     font-size: 2vw;
