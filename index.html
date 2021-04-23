@@ -42,6 +42,15 @@
       </aside> 
     </section>
     <section id="contact">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email"><br>
+      <label for="message">Message:</label>
+      <textarea id="message" ></textarea><br>
+      <button type="submit" id="formSubmit">submit</button>
+    </form>
       <div class="row">
         <a class="item sm" href="https://twitter.com/hughsy"><div>twitter</div></a>
         <div class="item link">twitter.com/hughsy</div>
@@ -56,4 +65,15 @@
       </div>
     </section>
   </body>
+  <script>
+    var button = document.getElementById('formSubmit')
+    var nameElement = document.getElementById('name')
+    var email = document.getElementById('email')
+    var message = document.getElementById('message')
+    button.addEventListener('click',function(e){
+      e.preventDefault();
+      console.log(name.value)
+      alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
+    })
+  </script>
 </html>
