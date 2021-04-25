@@ -4,37 +4,67 @@ body{
 }
 #flex-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   align-items: center;
   background-color: #E1D8CE;
   margin-left:15%;
   margin-right:15%;
+  padding-top:3vh;
 }
 
-#main{
-  display: flex;
+/* VERTICAL TEXT */
+
+.vertical {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  color: #71777A;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* GRID */
+
+.work {
   justify-content: center;
-  margin-left: 80px;
-  margin-right: 80px;
+  display: grid;
+  width:100%;
+  grid-template-columns: 5% 40% 40% 5%;
+  grid-template-areas:
+  "col-1 col-2 col-3";  
   text-align: center;  
-  padding:2vh 10vw 2vh 10vw; 
-  align-content: center;
-  width:60vw;
-  height:75vh;
+  height:75vh;  
 }
 
 .bio {
-  padding:30px;
-  width:28vw;
   background-color: #F5F5F5;
-  border-style: solid;
-  border-color: #71777A;
-  border-width: 1px;
+  height:100%;
 }
 
 img{
   width:200px;
 }
+
+.col-1{
+  grid-area: col-1;
+}
+.col-2{
+  grid-area: col-2;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-width:1px;
+  border-color: #71777A;
+}
+.col-3{
+  grid-area: col-3;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+  border-width:1px;
+  border-color: #71777A;
+}
+
+/* NAV BAR */
 
 nav{
   position:relative;
@@ -45,7 +75,6 @@ nav{
 }
 
 .nav-item{
-  align-items: flex-start;
   text-decoration: none;
   text-align: center;
   padding-top: 2vh;
@@ -62,3 +91,4 @@ nav{
   padding:3vh 1vw 3vh 1vw;
   color:#F5F5F5;
 }
+
