@@ -36,17 +36,6 @@ img{
   width:200px;
 }
 
-
-#header{
-  background-color: #E1D8CE;
-
-}
-
-#anchor-container{ /* ADDED FOR 'GROW' effect when hovering over item */
-  padding:3vh 1vw 3vh 1vw;
-  color:#F5F5F5;
-}
-
 nav{
   position:relative;
   top:3vh;
@@ -69,3 +58,7 @@ nav{
   color:#71777A;  
 }
 
+#anchor-container{ /* ADDED FOR 'GROW' effect when hovering over item */
+  padding:3vh 1vw 3vh 1vw;
+  color:#F5F5F5;
+}

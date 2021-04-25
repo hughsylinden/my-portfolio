@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HLK - contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+  </head>
+  <body>
+    <div id="flex-container">
+        <section id="contact">  
+          <form id="contact-form">
+            <ul>
+              <li class="form-row">
+                <label class="row-item" for="name">Name:</label>
+                <input class="row-item" type="text" id="name"><br>
+              </li>
+              <li class="form-row">
+                <label class="row-item" for="email">Email:</label>
+                <input class="row-item" type="email" id="email"><br>
+              </li>
+              <li class="form-row">
+                <label class="row-item" for="message">Message:</label>
+                <textarea class="row-item" id="message" ></textarea><br>
+              </li>
+              <button class="row-item" type="clear" id="formClear">clear</button>
+              <button class="row-item" type="submit" id="formSubmit">submit</button>
+            </ul>
+          </form>
+          <span id="contact-links">
+            <div class="row">
+              <a class="item sm" href="https://twitter.com/hughsy"><div>twitter</div></a>
+              <div class="item link">twitter.com/hughsy</div>
+            </div>
+            <div class="row">
+              <a class="item sm" href="https://fb.com/hugh.kristiansen"><div>facebook</div></a>
+              <div class="item link">fb.com/hugh.kristiansen</div>
+            </div>
+            <div class="row">
+              <a class="item sm" href="https://github.com/hughsylinden"><div>github</div></a>
+              <div class="item link">github.com/hughsylinden</div>
+            </div>
+          </span>   
+        </section>
+        <nav>
+          <a class="nav-item" href="./index.html"><span id="anchor-container">Home</span></a>
+          <a class="nav-item" href="./about.html"><span id="anchor-container">About</span></a>
+          <a class="nav-item" href=""><span id="anchor-container">Contact</span></a>
+        </nav>      
+    </div>
+    <script>
+      var submitButton = document.getElementById('formSubmit')
+      var clearButton = document.getElementById('formClear')
+      var nameElement = document.getElementById('name')
+      var email = document.getElementById('email')
+      var message = document.getElementById('message')
+      submitButton.addEventListener('click',function(e){
+        e.preventDefault();
+        alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
+      })
+      clearButton.addEventListener('click',function(e){
+        e.preventDefault();
+        nameElement.value= '';
+        email.value= '';
+        message.value= '';
+      })
+    </script>
+  </body>
+</html>

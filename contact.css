@@ -1,0 +1,129 @@
+@font-face { font-family: FuturaMedium; src: url('Futura-Medium.otf'); } 
+body{
+  font-family: FuturaMedium;
+}
+#flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E1D8CE;
+  margin-left:15%;
+  margin-right:15%;
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;  
+  padding:2vh 10vw 2vh 10vw; 
+  height:75vh;
+}
+
+nav{
+  position:relative;
+  top:3vh;
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+}
+
+.nav-item{
+  align-items: flex-start;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color:#71777A;
+}
+
+#anchor-container:hover{
+  background-color:#F5F5F5;
+  color:#71777A;  
+}
+
+#anchor-container{ /* ADDED FOR 'GROW' effect when hovering over item */
+  padding:3vh 1vw 3vh 1vw;
+  color:#F5F5F5;
+}
+
+/* CONTACT SECTION */
+
+#contact-links {
+  width:28vw;
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+}
+
+.row {
+  display: flex;
+  border: 1px solid #71777A;
+  justify-self: center;
+}
+
+.item {
+  background-color: #E1D8CE;
+  text-align: center;
+  color:#71777A;
+  text-decoration: none;
+  width: 50%;
+  height:3vh;
+}
+
+.sm:hover{
+  background-color: #71777A;
+  color:#F5F5F5;
+}
+.link {
+  background-color: #71777A;
+  color:#71777A;
+}
+.sm:hover + .link{
+  background-color: #F5F5F5;
+}
+
+/* FORM */
+
+#contact-form {
+  display: flex;
+  flex-direction: column; 
+  background-color: #E1D8CE;
+  border: 1px solid #71777A;
+}
+
+form {
+  
+  display:flex;
+  flex-direction: column; 
+  color:#71777A;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  flex: 1;
+}
+
+.row-item {
+  flex: 1; 
+}
+ul {
+  padding: 0 1vw 0 1vw;
+}
+li {
+  margin: 1vh 0 1vh 0;
+}
+button{
+  float:right;
+}
+button,input,textarea{
+  border:1px solid #71777A;;
+  background-color: #F5F5F5;
+}
+textarea{
+  height:10vh;
+}
+
