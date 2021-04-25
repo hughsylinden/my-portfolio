@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio</title>
+    <title>about me</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
   </head>
   <body>
-    <section id="home">
-      <header>
-        <h3>Hugh Kristiansen</h3>
-        <h5>aspiring eveloper</h5>
-      </header> 
-      <nav>
-        <a class="navbar" href="#home">Home  </a>
-        <a class="navbar" href="#main">About</a>
-        <a class="navbar" href="./contact.html#contact">Contact</a>
-      </nav>
-    </section>
-    <br>
-    <br>
-    <br>
-    <section id="main">
-      <article>
-        <h4>Hello! I'm Hugh.</h4>
-        <p>I am a MCRCodes student currently working in professional services in Manchester.          
-        </p>
-        <p>My programming experience beyond Java is mostly self-taught(and limited) and includes the following languages:</p>
-        <ul>
-          <li>Java</li>
-          <li>HTML/CSS</li>
-          <li>Ruby</li>
-          <li>Python</li>
-        </ul>
-      </article> 
-      <aside>
-        <br>
-        <br>
-        <br>
-        <div class="container"></div>
-        <i>Hugh Kristiansen is an aspiring developer. Please hire him.</i>
-      </aside> 
-    </section>
+    <div id="flex-container">
+      <header id="header">    
+        <div id="title-container"> 
+          <div id="title-item">
+            <h3>Hugh Kristiansen</h3>
+            <h5>aspiring eveloper</h5>
+          </div>             
+        </div> 
+        <nav>
+          <a class="nav-item" href="#home"><span id="anchor-container">Home</span></a>
+          <a class="nav-item" href="#main"><span id="anchor-container">About</span></a>
+          <a class="nav-item" href="./contact.html#contact"><span id="anchor-container">Contact</span></a>
+        </nav>
+      </header>
+      <br>
+      <br>
+      <br>
+      <section id="main">
+
+        <article class="bio">
+          <h4>Hello! I'm Hugh.</h4>
+          <p>I am a MCRCodes student currently working in professional services in Manchester.          
+          </p>
+          <p>My programming experience beyond Java is mostly self-taught(and limited) and includes the following languages:</p>
+          <ul>
+            <li>Java</li>
+            <li>HTML/CSS</li>
+            <li>Ruby</li>
+            <li>Python</li>
+          </ul>
+        </article> 
+        <aside class="bio">
+          <img src="./hugh.jpg">
+          <br>
+          <i>Hugh Kristiansen is an aspiring developer. <br><b>Please hire him.</b></i>
+        </aside> 
+      </section>
+    </div>
   </body>
-  <script>
-    var submitButton = document.getElementById('formSubmit')
-    var clearButton = document.getElementById('formClear')
-    var nameElement = document.getElementById('name')
-    var email = document.getElementById('email')
-    var message = document.getElementById('message')
-    submitButton.addEventListener('click',function(e){
-      e.preventDefault();
-      alert('hey '+nameElement.value+" your email is: "+email.value+" and message: "+message.value);
-    })
-    clearButton.addEventListener('click',function(e){
-      e.preventDefault();
-      nameElement.value= '';
-      email.value= '';
-      message.value= '';
-    })
-  </script>
 </html>
