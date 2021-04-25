@@ -1,4 +1,4 @@
-@font-face { font-family: FuturaMedium; src: url('Futura-Medium.otf'); } 
+@font-face { font-family: FuturaMedium; src: url('../fonts/Futura-Medium.otf'); } 
 body{
   font-family: FuturaMedium;
 }
@@ -30,7 +30,7 @@ h5{
   font-size:0.7vw ;
 }
 #header{
-  background-image: url('better.jpg');
+  background-image: url('../media/better.jpg');
   background-repeat: no-repeat ;
   background-position: center center;
   background-size: contain;

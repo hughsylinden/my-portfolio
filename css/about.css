@@ -1,4 +1,4 @@
-@font-face { font-family: FuturaMedium; src: url('Futura-Medium.otf'); } 
+@font-face { font-family: FuturaMedium; src: url('../fonts/Futura-Medium.otf'); } 
 body{
   font-family: FuturaMedium;
 }
