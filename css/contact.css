@@ -18,10 +18,10 @@ body{
   writing-mode: tb-rl;
   transform: rotate(-180deg);
   color: #71777A;
-  font-size: 3em;
+  font-size: 3.5vw;
   font-weight: bold;
   position: relative;
-  left:3vw;
+  left:3.4vw;
 }
 
 /* GRID */

@@ -14,7 +14,7 @@ body{
 #title-container{
   display: flex;
   justify-content: center;
-  margin-top: 48vh;
+  margin-top: 45vh;
 }
 
 #title-item{
@@ -32,12 +32,12 @@ h3{
 h5{
   font-size:0.7vw ;
 }
+
 #header{
   background-image: url('../media/better.jpg');
   background-repeat: no-repeat ;
   background-position: center center;
-  background-size: contain;
-  
+  background-size: contain;  
   height:81vh;
   width:60vw;
 }

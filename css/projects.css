@@ -20,6 +20,8 @@ body{
   color: #71777A;
   font-size: 3.5vw;
   font-weight: bold;
+  position: relative;
+  left:3.4vw;
 }
 
 /* GRID */
@@ -28,23 +30,12 @@ body{
   justify-content: center;
   display: grid;
   width:100%;
-  grid-template-columns: 5% 40% 40% 5%;
-  grid-template-rows: repeat(1,50%);
+  grid-template-columns: 10% 30% 50% 10%;
   grid-template-areas:
-  "col-1 col-2 col-3";  
+  "col-1 col-2 col-3 col-4";  
   text-align: center;  
   height:75vh;  
-  align-content: space-around;
-}
 
-.bio {
-  background-color: #F5F5F5;
-  height:100%;
-  padding: 3vh 3vw 3vh 3vw;
-}
-
-img{
-  width:200px;
 }
 
 .col-1{
@@ -52,19 +43,31 @@ img{
 }
 .col-2{
   grid-area: col-2;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-width:1px;
-  border-color: #71777A;
+  background-color: #F5F5F5;
+  display: grid;
+  color:#71777A;
 }
+
+.col-2 h3{
+  width: 100%;
+  margin: 0;
+  border: 1px solid #71777A;
+}
+
 .col-3{
   grid-area: col-3;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-width:1px;
-  border-color: #71777A;
+  display: grid;
+}
+
+.col-3 img{
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+  border: 1px solid #71777A;
+}
+
+.col-4{
+  grid-area: col-4;
 }
 
 /* NAV BAR */
