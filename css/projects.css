@@ -21,7 +21,7 @@ body{
   font-size: 3.5vw;
   font-weight: bold;
   position: relative;
-  left:3.4vw;
+  left:3.6vw;
 }
 
 /* GRID */
@@ -35,7 +35,6 @@ body{
   "col-1 col-2 col-3 col-4";  
   text-align: center;  
   height:75vh;  
-
 }
 
 .col-1{
@@ -98,3 +97,23 @@ nav{
   color:#F5F5F5;
 }
 
+@media screen and (min-width:300px) and (max-width:1000px)  {
+  #flex-container{
+    margin-left:0;
+    margin-right:0;
+  }
+  .vertical {
+    font-size: 6vw;
+    left:4vw;
+  }
+  a{
+    width: 200px;
+  }
+  .nav-item:hover{
+    background-color:#F5F5F5;
+    color:#71777A;  
+  }
+  #anchor-container{ 
+    padding:0vh 0vw 0vh 0vw;
+  }
+}

@@ -20,6 +20,8 @@ body{
   color: #71777A;
   font-size: 3.5vw;
   font-weight: bold;
+  position: relative;
+  left:3.6vw;
 }
 
 /* GRID */
@@ -28,10 +30,9 @@ body{
   justify-content: center;
   display: grid;
   width:100%;
-  grid-template-columns: 5% 40% 40% 5%;
-  grid-template-rows: repeat(1,50%);
+  grid-template-columns: 10% 40% 40% 10%;
   grid-template-areas:
-  "col-1 col-2 col-3";  
+  "col-1 col-2 col-3 col-4";  
   text-align: center;  
   height:75vh;  
   align-content: space-around;
@@ -95,3 +96,24 @@ nav{
   color:#F5F5F5;
 }
 
+@media screen and (min-width:300px) and (max-width:1000px)  {
+  #flex-container{
+    margin-left:0;
+    margin-right:0;
+  }
+  .vertical {
+    font-size: 6vw;
+    left:4vw;
+  }
+  a{
+    width: 200px;
+  }
+
+  .nav-item:hover{
+    background-color:#F5F5F5;
+    color:#71777A;  
+  }
+  #anchor-container{ 
+    padding:0vh 0vw 0vh 0vw;
+  }
+}
